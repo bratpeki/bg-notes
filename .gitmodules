@@ -1,0 +1,3 @@
+[submodule "bookgen"]
+	path = bookgen
+	url = https://github.com/bratpeki/bookgen

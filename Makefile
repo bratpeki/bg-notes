@@ -23,14 +23,9 @@ docs: $(DOC_OUTPUTS)
 
 $(OUTDIR)/%.html:
 	@mkdir -p $(OUTDIR)
-	@srcs="$$(find $(DOCDIR)/$* -maxdepth 1 -type f -name '*.c' | sort)"; \
-	if [ -z "$$srcs" ]; then \
-		echo "No .c files found in $(DOCDIR)/$*/"; \
-		exit 1; \
-	fi; \
-	$(CC) $(CFLAGS) -o $(OUTDIR)/$*.out $$srcs $(LDFLAGS); \
-	./$(OUTDIR)/$*.out > $@; \
-	rm -f $(OUTDIR)/$*.out; \
+	$(CC) $(CFLAGS) -o $(OUTDIR)/$*.out $(DOCDIR)/$*/*.c $(LDFLAGS)
+	./$(OUTDIR)/$*.out > $@
+	rm -f $(OUTDIR)/$*.out
 
 # This is there just to confirm the variables are good
 list:

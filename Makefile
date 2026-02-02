@@ -41,4 +41,4 @@ list:
 	@printf "  %s\n" $(DOC_OUTPUTS)
 
 clean:
-	@rm -rf $(OUTDIR)
+	-rm -rf $(OUTDIR)

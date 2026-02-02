@@ -34,7 +34,7 @@ int main() {
 
 		BG_HEAD();
 			BG_DOCTITLE(TITLE);
-			BG_STYLE("../../bookgen/styles/default-dark.css");
+			BG_STYLE("../bookgen/styles/default-dark.css");
 			BG_STYLE_PRINT();
 		BG_END_HEAD();
 

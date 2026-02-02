@@ -17,7 +17,7 @@ DOC_OUTPUTS := $(addprefix $(OUTDIR)/,$(addsuffix .html,$(DOC_PROJECTS)))
 
 .PHONY: all docs clean list
 
-all: docs
+all: clean docs
 
 docs: $(DOC_OUTPUTS)
 

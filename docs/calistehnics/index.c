@@ -34,7 +34,7 @@ int main() {
 
 		BG_HEAD();
 			BG_DOCTITLE(TITLE);
-			BG_STYLE("../bookgen/styles/default-dark.css");
+			BG_STYLE("../bookgen/styles/default-light.css");
 			BG_STYLE_PRINT();
 		BG_END_HEAD();
 
@@ -140,6 +140,7 @@ int main() {
 
 				TABLE3("Crunches", "Abs", "Hip Flexors");
 				TABLE3("Lying Leg Raises", "Abs (Lower)", "Hip Flexors");
+				TABLE3("Alternating Lying Leg Raises", "Abs (Lower)", "Hip Flexors");
 				TABLE3("L-Sit Hold", "Deep Core", "Hip Flexors");
 				TABLE3("Body Saw Planks", "Deep Core", "Shoulders, Calves");
 				TABLE3("Full Plank Arm Extensions", "Deep Core", "Shoulders, Triceps");
@@ -150,6 +151,11 @@ int main() {
 				TABLE3("Side Planks", "Obliques", "Deep Core, Shoulders");
 				TABLE3("Superman", "Lower back", "Glutes, Hamstrings");
 				TABLE3("Seated Leg Raises", "Hip Flexors", "");
+				TABLE3("Mountain Climbers", "Abs, Deep Core", "Shoulders, Triceps, Hip Flexors");
+				TABLE3("Seated Twists", "Obliques", "Deep Core, Abs");
+				TABLE3("Flutter Kicks", "Abs", "Deep Core, Hip Flexors");
+				TABLE3("In and Outs", "Abs, Deep Core", "Hip Flexors");
+				TABLE3("Alternating In and Outs", "Abs, Deep Core", "Hip Flexors");
 
 			BG_END_TABLE();
 

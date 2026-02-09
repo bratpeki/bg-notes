@@ -7,6 +7,8 @@ LDFLAGS :=
 DOCDIR  := docs
 OUTDIR  := out
 
+BROWSER := firefox
+
 # Each folder in docs is one HTML file in out
 # So, docs/calisthenics/*.c -> out/calisthenics.html
 # This collects all the folders directly inside docs
@@ -37,3 +39,6 @@ list:
 
 clean:
 	-rm -rf $(OUTDIR)
+
+open:
+	$(BROWSER) $(DOC_OUTPUTS)

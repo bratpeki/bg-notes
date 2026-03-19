@@ -11,7 +11,7 @@ void LI_INDENTED(int level, const char* text) {
 	);
 }
 
-void HEADER( const char* a, const char* b, const char* c ) {
+void HEADER(const char* a, const char* b, const char* c) {
 	BG_TABLEROW();
 		BG_TH_A(a, "width=\"33%\"");
 		BG_TH_A(b, "width=\"33%\"");
@@ -19,7 +19,7 @@ void HEADER( const char* a, const char* b, const char* c ) {
 	BG_END_TABLEROW();
 }
 
-void EXERCISE( const char* a, const char* b, const char* c ) {
+void EXERCISE(const char* a, const char* b, const char* c) {
 	BG_TABLEROW();
 		BG_TD(a);
 		BG_TD(b);
@@ -159,6 +159,8 @@ int main() {
 				EXERCISE("Superman", "Lower Back", "Glutes, Hamstrings");
 
 			BG_END_TABLE();
+
+			BG_PAGEBREAK();
 
 			BG_H(3, "Misc");
 
